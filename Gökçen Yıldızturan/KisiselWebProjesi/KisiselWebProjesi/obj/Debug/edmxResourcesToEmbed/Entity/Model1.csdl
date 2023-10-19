@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KisiselWebSiteDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ContextKey" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Model" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="ProductVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Admins">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kullaniciadi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="sifre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="AnaSayfas">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="menugorsel" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="menu1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="menu2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="menu3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="menu4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="marka" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="hosgeldin" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="bilgi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="about" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ourstory1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="paragraf1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="gorselfirca" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="photo1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="photo2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="photo3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="photo4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="photo5" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="photo6" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="photo7" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="photo8" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="discover" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ourstory2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="paragraf2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="gorselsim" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="contact" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="aboutus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="location" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="mail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="paragraf3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="isim" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="İkonlar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ikon" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="link" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="KisiselWebSiteDbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="C__MigrationHistory" EntityType="Self.C__MigrationHistory" />
+    <EntitySet Name="Admins" EntityType="Self.Admins" />
+    <EntitySet Name="AnaSayfas" EntityType="Self.AnaSayfas" />
+    <EntitySet Name="İkonlar" EntityType="Self.İkonlar" />
+  </EntityContainer>
+</Schema>

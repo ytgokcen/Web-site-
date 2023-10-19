@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KisiselWebSiteDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="ContextKey" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="Model" Type="varbinary(max)" Nullable="false" />
+    <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Admins">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="kullaniciadi" Type="nvarchar(max)" />
+    <Property Name="sifre" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="AnaSayfas">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="menugorsel" Type="nvarchar(max)" />
+    <Property Name="menu1" Type="nvarchar(max)" />
+    <Property Name="menu2" Type="nvarchar(max)" />
+    <Property Name="menu3" Type="nvarchar(max)" />
+    <Property Name="menu4" Type="nvarchar(max)" />
+    <Property Name="marka" Type="nvarchar(max)" />
+    <Property Name="hosgeldin" Type="nvarchar(max)" />
+    <Property Name="bilgi" Type="nvarchar(max)" />
+    <Property Name="about" Type="nvarchar(max)" />
+    <Property Name="ourstory1" Type="nvarchar(max)" />
+    <Property Name="paragraf1" Type="nvarchar(max)" />
+    <Property Name="gorselfirca" Type="nvarchar(max)" />
+    <Property Name="photo1" Type="nvarchar(max)" />
+    <Property Name="photo2" Type="nvarchar(max)" />
+    <Property Name="photo3" Type="nvarchar(max)" />
+    <Property Name="photo4" Type="nvarchar(max)" />
+    <Property Name="photo5" Type="nvarchar(max)" />
+    <Property Name="photo6" Type="nvarchar(max)" />
+    <Property Name="photo7" Type="nvarchar(max)" />
+    <Property Name="photo8" Type="nvarchar(max)" />
+    <Property Name="discover" Type="nvarchar(max)" />
+    <Property Name="ourstory2" Type="nvarchar(max)" />
+    <Property Name="paragraf2" Type="nvarchar(max)" />
+    <Property Name="gorselsim" Type="nvarchar(max)" />
+    <Property Name="contact" Type="nvarchar(max)" />
+    <Property Name="aboutus" Type="nvarchar(max)" />
+    <Property Name="phone" Type="nvarchar(max)" />
+    <Property Name="location" Type="nvarchar(max)" />
+    <Property Name="mail" Type="nvarchar(max)" />
+    <Property Name="paragraf3" Type="nvarchar(max)" />
+    <Property Name="isim" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="İkonlar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ikon" Type="nvarchar(max)" />
+    <Property Name="link" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityContainer Name="KisiselWebSiteDbModelStoreContainer">
+    <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Admins" EntityType="Self.Admins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AnaSayfas" EntityType="Self.AnaSayfas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="İkonlar" EntityType="Self.İkonlar" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

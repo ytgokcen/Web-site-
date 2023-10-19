@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="KisiselWebSiteDbModelStoreContainer" CdmEntityContainer="KisiselWebSiteDbEntities">
+    <EntitySetMapping Name="C__MigrationHistory">
+      <EntityTypeMapping TypeName="KisiselWebSiteDbModel.C__MigrationHistory">
+        <MappingFragment StoreEntitySet="__MigrationHistory">
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+          <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Admins">
+      <EntityTypeMapping TypeName="KisiselWebSiteDbModel.Admins">
+        <MappingFragment StoreEntitySet="Admins">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="kullaniciadi" ColumnName="kullaniciadi" />
+          <ScalarProperty Name="sifre" ColumnName="sifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AnaSayfas">
+      <EntityTypeMapping TypeName="KisiselWebSiteDbModel.AnaSayfas">
+        <MappingFragment StoreEntitySet="AnaSayfas">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="menugorsel" ColumnName="menugorsel" />
+          <ScalarProperty Name="menu1" ColumnName="menu1" />
+          <ScalarProperty Name="menu2" ColumnName="menu2" />
+          <ScalarProperty Name="menu3" ColumnName="menu3" />
+          <ScalarProperty Name="menu4" ColumnName="menu4" />
+          <ScalarProperty Name="marka" ColumnName="marka" />
+          <ScalarProperty Name="hosgeldin" ColumnName="hosgeldin" />
+          <ScalarProperty Name="bilgi" ColumnName="bilgi" />
+          <ScalarProperty Name="about" ColumnName="about" />
+          <ScalarProperty Name="ourstory1" ColumnName="ourstory1" />
+          <ScalarProperty Name="paragraf1" ColumnName="paragraf1" />
+          <ScalarProperty Name="gorselfirca" ColumnName="gorselfirca" />
+          <ScalarProperty Name="photo1" ColumnName="photo1" />
+          <ScalarProperty Name="photo2" ColumnName="photo2" />
+          <ScalarProperty Name="photo3" ColumnName="photo3" />
+          <ScalarProperty Name="photo4" ColumnName="photo4" />
+          <ScalarProperty Name="photo5" ColumnName="photo5" />
+          <ScalarProperty Name="photo6" ColumnName="photo6" />
+          <ScalarProperty Name="photo7" ColumnName="photo7" />
+          <ScalarProperty Name="photo8" ColumnName="photo8" />
+          <ScalarProperty Name="discover" ColumnName="discover" />
+          <ScalarProperty Name="ourstory2" ColumnName="ourstory2" />
+          <ScalarProperty Name="paragraf2" ColumnName="paragraf2" />
+          <ScalarProperty Name="gorselsim" ColumnName="gorselsim" />
+          <ScalarProperty Name="contact" ColumnName="contact" />
+          <ScalarProperty Name="aboutus" ColumnName="aboutus" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="location" ColumnName="location" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="paragraf3" ColumnName="paragraf3" />
+          <ScalarProperty Name="isim" ColumnName="isim" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="İkonlar">
+      <EntityTypeMapping TypeName="KisiselWebSiteDbModel.İkonlar">
+        <MappingFragment StoreEntitySet="İkonlar">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ikon" ColumnName="ikon" />
+          <ScalarProperty Name="link" ColumnName="link" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

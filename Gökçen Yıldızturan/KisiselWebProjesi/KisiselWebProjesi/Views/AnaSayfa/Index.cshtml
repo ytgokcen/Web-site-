@@ -1,0 +1,236 @@
+﻿@using KisiselWebProjesi.Models.Siniflar
+@model List<AnaSayfa>
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- <link rel="stylesheet" type="text/css" href="~/web-Gokcen-Proje/style.css">-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+   <!-- <link rel="stylesheet" type="text/css" href="font-awesome/css/all.css">-->
+    <link rel="stylesheet" type="text/css" href="~/web-Gokcen-Proje/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+
+ 
+
+    <!--HEADER START-->
+    <header id="header">
+        <div class="header">
+            <div class="container">
+                <div class="header-navbar">
+                    <div class="header-logo">
+                        <h2>Chic Cosmetics</h2>
+                    </div>
+                    <div class="header-menu">
+                        <ul id="menuItems">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Discover</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <i class="fa-solid fa-bars" id="menu-icon" onclick="menuToggle();"></i>
+                    </div>
+                </div>
+                <div class="header-text">
+                    <h1>
+                        <span class="first-letter">W</span>elcome
+                    </h1>
+                    <h3>For Healthy Glowing Skin</h3>
+                    <a href="#" class="btn-makeup">Get Started</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Gökçen-->
+        <div class="content">
+            @foreach (var x in Model)
+            {
+
+                <h2>@x.marka</h2>
+                <h3>@x.bilgi</h3>
+            }
+
+        </div>
+
+    </header>
+    <!--HEADER FINISH-->
+    <!--ABOUT START-->
+    <section id="about">
+        <div class="about">
+            <div class="container">
+                <div class="about-tittle">
+                    <h2>ABOUT</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-img anime-left">
+                        <img src="~/web-Gokcen-Proje/photos/about.jpg" alt="">
+                    </div>
+                    <div class="about-text anime-right">
+                        <h4>Our Story</h4>
+                        <div id="asteriks">
+                            <i class="fas fa-asterisk"></i>
+                        </div>
+                        <p>
+                            Chic Cosmetics, we combine years of experience and passion to create exceptional beauty products.
+                            Our quality stands out through our meticulous selections. Our products are carefully crafted to bring
+                            beauty and health to your skin. Each of our products is produced to the highest quality standards and
+                            offers specialized care tailored to your skin type. When you embark on this journey with us, you're taking
+                            a step toward a healthy and radiant complexion. Discover your beauty with Chic Cosmetics!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--ABOUT FİNİSH-->
+    <!-- PORTFOLİO START --->
+
+    <section id="potfolio">
+        <div class="potfolio">
+            <div class="portfolio-item ani1">
+                <img src="https://localhost:44311/web-Gokcen-Proje/photos/01.jpg" />
+                <div class="overlay">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="portfolio-item ani2">
+                <img src="https://localhost:44311/web-Gokcen-Proje/photos/02.jpg" alt="">
+                <div class="overlay">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+            <div class="portfolio-item ani3">
+                <img src="https://localhost:44311/web-Gokcen-Proje/photos/03.jpg" alt="">
+                <div class="overlay">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="portfolio-item ani4">
+                <img src="https://localhost:44311/web-Gokcen-Proje/photos/04.jpg" alt="">
+                <div class="overlay">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+            <div class="portfolio-item ani5">
+                <img src="https://localhost:44311/web-Gokcen-Proje/photos/05.jpg" alt="">
+                <div class="overlay">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="portfolio-item ani6">
+                <img src="https://localhost:44311/web-Gokcen-Proje/photos/06.jpg" alt="">
+                <div class="overlay">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+            <div class="portfolio-item ani7">
+                <img src="https://localhost:44311/web-Gokcen-Proje/photos/07.jpg" alt="">
+                <div class="overlay">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="portfolio-item ani8">
+                <img src="https://localhost:44311/web-Gokcen-Proje/photos/08.jpg" alt="">
+                <div class="overlay">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLİO FINISH -->
+    <!-- DISCOVER START -->
+
+    <section id="about">
+        <div class="about">
+            <div class="container">
+                <div class="about-tittle">
+                    <h2>DISCOVER</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-img anime-left">
+                        <img src="~/web-Gokcen-Proje/photos/makeup.jpg" alt="">
+                    </div>
+                    <div class="about-text anime-right">
+                        <h4>Our Story</h4>
+                        <div id="asteriks">
+                            <i class="fas fa-asterisk"></i>
+                        </div>
+                        <p>
+                            There's nothing like feeling your skin always soft with an intensely moisturizing day cream!
+                            Although special products for the night routine come to the fore in skin care, we need to be sensitive
+                            about day care. It is extremely important to be meticulous in choosing moisturizers to provide our skinbr
+                            with the cleanliness and moisture balance it deserves. Let's get started!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISCOVER FINISH -->
+    <!-- CONTACT START-->
+
+    <section id="contact">
+        <div class="contact">
+            <div class="container">
+                <div class="page-tittle">
+                    <h2>CONTACT</h2>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-item anime-top">
+                        <i class="fa fa-phone"></i>
+                        <p>0530 880 95**</p>
+                        <br>
+                        <p>0212 216 00**</p>
+                    </div>
+                    <div class="contact-item anime-bottom">
+                        <i class="fa fa-location-dot"></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Ea velit.</p>
+                    </div>
+                    <div class="contact-item anime-top">
+                        <i class="fa fa-envelope-open"></i>
+                        <p>makeup.house@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FINISH-->
+    <!-- FOOTER START-->
+    <footer id="footer">
+        <div class="footer">
+            <div class="footer-content">
+                <div class="page-tittle">
+                    <h2>ABOUT US</h2>
+                </div>
+                <div class="footer-copyright">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, odit?</p>
+                    <br>
+                </div>
+                <nav class="footer-social">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER FINISH-->
+
+  
+
+</body>
+</html>
+
